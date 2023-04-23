@@ -15,15 +15,15 @@ const Hero = () => {
   return (
     <div className='flex flex-col md:flex-row pt-20 mx-10 justify-center items-center'>
       <div className='grid gap-y-4 max-w-2xl'>
-        <div className='inline-flex text-3xl gap-3'>
+        <div className='inline-flex text-3xl gap-3 text-gray-300'>
           HELLO! <img src={wave} className='h-10'/> I'M
         </div>
         <h1 className='text-8xl font-medium mb-8'>Jeremy Lee</h1>
         <div className='inline-flex text-3xl gap-3 font-bold'>
           STUDENT 👨‍🎓 + DEVELOPER 👨‍💻
         </div>
-        <div className='inline-flex-wrap text-2xl gap-3'>
-          I'm a creative thinker 🧠, passionate to learn about <strong>UX/UI</strong> 📱 and <strong>Product Design</strong> 🧪
+        <div className='inline-flex-wrap text-2xl gap-3 text-gray-400'>
+          I'm a creative thinker 🧠, passionate to learn about <strong className='text-white'>UX/UI</strong> 📱 and <strong className='text-white'>Product Design</strong> 🧪
         </div>
         <div className='flex mt-3 gap-6 invert'>
           <a href="https://www.linkedin.com/in/jeremylee7/" target="_blank">
