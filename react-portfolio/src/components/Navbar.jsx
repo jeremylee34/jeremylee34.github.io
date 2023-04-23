@@ -16,13 +16,13 @@ const Navbar = () => {
       <a className='cursor-pointer' onClick={ () => navigate('/') }>
         <img src={logo} alt="logo" className="invert h-10"/>
       </a>
-      <ul className='flex gap-8 text-white text-lg'>
-        <li><a href="#about" >About</a></li>
-        <li><a href="#projects" >Projects</a></li>
-        <li><a href="#bookshelf" >Bookshelf</a></li>
-        <li><a href="#photos" >Photos</a></li>
-        <li><a href="#contact" >Contact</a></li>
-        <li className='cursor-pointer'
+      <ul className='flex items-center justify-center gap-2 text-white text-lg'>
+        <li><a className='hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200' href="#about" >About</a></li>
+        <li><a className='hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200' href="#projects" >Projects</a></li>
+        <li><a className='hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200' href="#bookshelf" >Bookshelf</a></li>
+        <li><a className='hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200' href="#photos" >Photos</a></li>
+        <li><a className='hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200' href="#contact" >Contact</a></li>
+        <li className='cursor-pointer hover:scale-110 ease-in duration-200 mb-1'
           onClick={() => {
             toggleDarkMode(getters, setters)
           }}
