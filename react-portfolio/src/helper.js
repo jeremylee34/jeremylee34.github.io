@@ -4,11 +4,13 @@ export function toggleDarkMode(getters, setters) {
     setters.setDarkMode('false')
     setters.setBgColor('white')
     setters.setFontColor('black')
+    document.documentElement.classList.remove('dark')
   } else {
     localStorage.setItem('darkMode', 'true')
     setters.setDarkMode('true')
     setters.setBgColor('#181a1b')
     setters.setFontColor('#e8e6e3')
+    document.documentElement.classList.add('dark');
   }
 }
 
@@ -20,8 +22,10 @@ export function initDarkMode(setDarkMode, setters) {
   if (localStorage.getItem('darkMode') === 'true') {
     setters.setBgColor('#181a1b')
     setters.setFontColor('#e8e6e3')
+    document.documentElement.classList.add('dark');
   } else {
     setters.setBgColor('white')
     setters.setFontColor('black')
+    document.documentElement.classList.remove('dark')
   }
 }
