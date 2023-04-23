@@ -6,7 +6,7 @@ const About = () => {
     <div className='mt-20 mb-20'>
       <hr className='mb-10'/>
       <h1 className='text-3xl font-bold text-center mb-10'>About Me</h1>
-      <div className='flex flex-col md:flex-row justify-center items-center mx-10'>
+      <div className='flex flex-col md:flex-row justify-center items-center '>
         <div className='flex-col text-2xl max-w-2xl text-center md:text-left'>
           <p className='mb-5'>Hi 👋, my name is Jeremy and I am a young aspiring learner, with a passion for <strong>Software Engineering</strong> and <strong>Design</strong>.</p>
           <p className='mb-2'>I am currently:</p>

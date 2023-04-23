@@ -27,7 +27,7 @@ function App() {
   }, [])
 
   return (
-    <div style={{ backgroundColor: bgColor, color: fontColor }}>
+    <div style={{ backgroundColor: bgColor, color: fontColor, transition: 'all 0.8s ease' }}>
       <Context.Provider value={{ getters, setters }}>
         <BrowserRouter>
           <Routes>

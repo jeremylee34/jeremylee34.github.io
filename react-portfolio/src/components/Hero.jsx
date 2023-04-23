@@ -13,7 +13,7 @@ const Hero = () => {
   const { getters, setters } = useContext(Context)
 
   return (
-    <div className='flex flex-col md:flex-row pt-20 mx-10 md:mx-20 justify-center items-center gap-10'>
+    <div className='flex flex-col md:flex-row pt-20 mx-10 justify-center items-center'>
       <div className='grid gap-y-4 max-w-2xl'>
         <div className='inline-flex text-3xl gap-3'>
           HELLO! <img src={wave} className='h-10'/> I'M
