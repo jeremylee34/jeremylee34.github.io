@@ -1,9 +1,10 @@
 import './App.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { Context, initial } from './context';
-import Home from './pages/Home';
 import { useState, useEffect } from 'react';
 import { initDarkMode } from './helper';
+import Home from './pages/Home';
+import About from './components/About';
 
 function App() {
   const [darkMode, setDarkMode] = useState(initial.darkMode)
@@ -22,7 +23,7 @@ function App() {
   }
 
   useEffect(() => {
-    initDarkMode(setDarkMode)
+    initDarkMode(setDarkMode, setters)
   }, [])
 
   return (
@@ -31,6 +32,8 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />}/>
+            <Route path='/#about' element={<About />}/>
+
           </Routes>
         </BrowserRouter>
       </Context.Provider>
