@@ -2,7 +2,7 @@ import React from 'react';
 
 export const initial = {
   darkMode: localStorage.getItem('darkMode'),
-  bgColor: '#181a1b',
+  bgColor: 'rgb(23 23 23)',
   fontColor: '#e8e6e3'
 };
 

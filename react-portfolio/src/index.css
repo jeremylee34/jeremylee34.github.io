@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .heroLinks {
+    @apply h-8 ease-in duration-100 hover:scale-110 invert dark:invert-0;
+  }
+
+  .aboutLinks {
+    @apply font-bold text-black dark:text-white hover:text-teal-600 hover:dark:text-teal-400;
+  }
+
+  .navLinks {
+    @apply hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200 hidden sm:flex;
+  }
+
+  .roleText {
+    @apply text-teal-600 dark:text-teal-400
+  }
+
+  .horizontalLine {
+    @apply mb-10 border-gray-400 dark:border-gray-700 mx-4
+  }
+  
+  .heroHeadings {
+    @apply mt-4 dark:font-semibold
+  }
+}

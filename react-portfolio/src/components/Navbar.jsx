@@ -13,15 +13,15 @@ const Navbar = () => {
 
   return (
     <nav className='bg-black p-5 flex items-center justify-between drop-shadow-md'>
-      <a className='cursor-pointer' onClick={ () => navigate('/') }>
-        <img src={logo} alt="logo" className="invert h-10"/>
+      <a className='cursor-pointer scale-75 hover:scale-90 ease-in duration-200' onClick={ () => navigate('/') }>
+        <img src={logo} alt="logo" className="invert h-10"/>  
       </a>
       <ul className='flex items-center justify-center gap-2 text-white text-lg'>
-        <li><a className='hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200' href="#about" >About</a></li>
-        <li><a className='hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200' href="#projects" >Projects</a></li>
-        <li><a className='hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200' href="#bookshelf" >Bookshelf</a></li>
-        <li><a className='hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200' href="#photos" >Photos</a></li>
-        <li><a className='hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200' href="#contact" >Contact</a></li>
+        <li><a className='navLinks' href="#about" >About</a></li>
+        <li><a className='navLinks' href="#projects" >Projects</a></li>
+        <li><a className='navLinks' href="#bookshelf" >Bookshelf</a></li>
+        <li><a className='navLinks' href="#photos" >Photos</a></li>
+        <li><a className='navLinks' href="#contact" >Contact</a></li>
         <li className='cursor-pointer hover:scale-110 ease-in duration-200 mb-1'
           onClick={() => {
             toggleDarkMode(getters, setters)
