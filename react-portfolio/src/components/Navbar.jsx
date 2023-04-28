@@ -20,7 +20,7 @@ const Navbar = () => {
       <ul className='navLinkContainer'>
         <li><a className='navLinks' href="#about" >About</a></li>
         <li><a className='navLinks' href="#projects" >Projects</a></li>
-        <li><a className='navLinks' href="#bookshelf" >Bookshelf</a></li>
+        {/* <li><a className='navLinks' href="#bookshelf" >Bookshelf</a></li> */}
         <li><a className='navLinks' href="#photos" >Photos</a></li>
         <li><a className='navLinks' href="#contact" >Contact</a></li>
         <li className='darkModeButton'

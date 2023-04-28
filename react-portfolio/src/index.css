@@ -32,11 +32,15 @@
   }
 
   .burgerMenu {
-    @apply absolute h-full py-2 z-40 
+    @apply fixed h-full py-2 z-40 
   }
 
   .sidebar {
-    @apply top-0 right-0 w-[60vw] bg-blue-600 p-10 pl-20 text-white fixed h-full 
+    @apply top-0 right-0 w-[65vw] bg-[#27beab] dark:bg-[#209c8c] p-10 pt-28 text-white fixed h-full ease-in-out duration-300 
+  }
+
+  .sidebarLinks {
+    @apply flex items-center gap-3 text-3xl font-semibold text-white mb-5
   }
 
   .clickOut {

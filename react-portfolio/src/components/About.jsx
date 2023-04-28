@@ -3,7 +3,7 @@ import portrait from '../assets/images/sunnies.jpg'
 
 const About = () => {
   return (
-    <div className='mb-20'>
+    <div className='pb-72'>
       <hr className='horizontalLine'/>
       <h1 className='text-3xl font-bold text-center mb-5'>About Me</h1>
       <div className='flex flex-col md:flex-row mx-5 md:mx-10 justify-center items-center text-slate-800 dark:text-gray-400'>
