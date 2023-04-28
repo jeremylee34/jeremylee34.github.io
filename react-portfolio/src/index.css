@@ -11,12 +11,36 @@
     @apply font-bold text-black dark:text-white hover:text-teal-600 hover:dark:text-teal-400;
   }
 
+  .navbar {
+    @apply sticky z-40 top-0 bg-black p-5 flex items-center justify-between drop-shadow-md 
+  }
+
   .navLinks {
     @apply hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200 hidden sm:flex;
   }
 
-  .navActionButtons {
-    @apply cursor-pointer p-2 pt-1 sm:hidden hover:bg-gray-900 rounded-full ease-in duration-200
+  .navLinkContainer {
+    @apply flex items-center justify-center gap-2 text-white text-lg
+  }
+
+  .darkModeButton {
+    @apply cursor-pointer p-2 pt-1 hover:bg-gray-900 rounded-full ease-in duration-200
+  }
+
+  .burgerButton {
+    @apply sm:hidden sticky top-0 z-50  cursor-pointer p-2 pt-1 hover:bg-gray-900 rounded-full ease-in duration-200 
+  }
+
+  .burgerMenu {
+    @apply absolute h-full py-2 z-40 
+  }
+
+  .sidebar {
+    @apply top-0 right-0 w-[60vw] bg-blue-600 p-10 pl-20 text-white fixed h-full 
+  }
+
+  .clickOut {
+    @apply w-screen h-screen
   }
 
   .roleText {
@@ -30,4 +54,5 @@
   .heroHeadings {
     @apply mt-4 dark:font-semibold
   }
+  
 }

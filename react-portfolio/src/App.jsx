@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 import { initDarkMode } from './helper';
 import Home from './pages/Home';
 import About from './components/About';
+import Burger from './components/Burger';
 
 function App() {
   const [darkMode, setDarkMode] = useState(initial.darkMode)
@@ -32,6 +33,7 @@ function App() {
   return (
     <div style={{ backgroundColor: bgColor, color: fontColor, transition: 'all 0.8s ease' }}>
       <Context.Provider value={{ getters, setters }}>
+        <Burger />
         <BrowserRouter>
           <Routes>
             <Route path='/' element={<Home />}/>
