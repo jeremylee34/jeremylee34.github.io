@@ -15,6 +15,10 @@
     @apply hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200 hidden sm:flex;
   }
 
+  .navActionButtons {
+    @apply cursor-pointer p-2 pt-1 sm:hidden hover:bg-gray-900 rounded-full ease-in duration-200
+  }
+
   .roleText {
     @apply text-teal-600 dark:text-teal-400
   }

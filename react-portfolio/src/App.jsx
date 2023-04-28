@@ -10,16 +10,19 @@ function App() {
   const [darkMode, setDarkMode] = useState(initial.darkMode)
   const [bgColor, setBgColor] = useState(initial.bgColor)
   const [fontColor, setFontColor] = useState(initial.fontColor)
+  const [sidebarOpen, setSidebarOpen] = useState(initial.sidebarOpen)
 
   const getters = {
     darkMode,
     bgColor,
-    fontColor
+    fontColor,
+    sidebarOpen
   }
   const setters = {
     setDarkMode,
     setBgColor,
-    setFontColor
+    setFontColor,
+    setSidebarOpen
   }
 
   useEffect(() => {

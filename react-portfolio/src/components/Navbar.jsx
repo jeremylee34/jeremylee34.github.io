@@ -3,6 +3,8 @@ import logo from '../assets/images/logo.png'
 import { useNavigate } from 'react-router-dom'
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
+import MenuIcon from '@mui/icons-material/Menu';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import { Context, useContext } from '../context';
 import { toggleDarkMode } from '../helper';
 
@@ -23,14 +25,25 @@ const Navbar = () => {
           <li><a className='navLinks' href="#bookshelf" >Bookshelf</a></li>
           <li><a className='navLinks' href="#photos" >Photos</a></li>
           <li><a className='navLinks' href="#contact" >Contact</a></li>
-          <li className='cursor-pointer hover:scale-110 ease-in duration-200 mb-1'
+          <li className='navActionButtons'
             onClick={() => {
               toggleDarkMode(getters, setters)
             }}
           >
             { getters.darkMode === 'true'
-              ? <LightModeIcon></LightModeIcon>
-              : <DarkModeIcon></DarkModeIcon>
+              ? <LightModeIcon />
+              : <DarkModeIcon />
+            }
+          </li>
+          <li className='navActionButtons'
+            onClick={() => {
+              console.log('side bar is', getters.sidebarOpen)
+              setters.setSidebarOpen(!getters.sidebarOpen)
+            }}
+          >
+            { getters.sidebarOpen === 'true'
+              ? <MenuOpenIcon />
+              : <MenuIcon />
             }
           </li>
         </ul>
