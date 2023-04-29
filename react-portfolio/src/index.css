@@ -40,7 +40,7 @@
   }
 
   .sidebarLinks {
-    @apply flex items-center gap-3 text-3xl font-semibold text-white mb-5
+    @apply flex items-center gap-5 text-3xl font-semibold text-white mb-5
   }
 
   .clickOut {
