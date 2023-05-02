@@ -12,6 +12,7 @@ function App() {
   const [bgColor, setBgColor] = useState(initial.bgColor)
   const [fontColor, setFontColor] = useState(initial.fontColor)
   const [sidebarOpen, setSidebarOpen] = useState(initial.sidebarOpen)
+  const [baseUrl, setBaseUrl] = useState(initial.baseUrl)
 
   const getters = {
     darkMode,
@@ -36,9 +37,8 @@ function App() {
         <Burger />
         <BrowserRouter>
           <Routes>
-            <Route path='/' element={<Home />}/>
+            <Route path={`/${baseUrl}`} element={<Home />}/>
             <Route path='/#about' element={<About />}/>
-
           </Routes>
         </BrowserRouter>
       </Context.Provider>

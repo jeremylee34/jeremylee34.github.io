@@ -2,6 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {  
+  --teal: rgb(20 184 166);
+  --blue: rgb(59 130 246);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+}
+
 @layer components {
   .heroLinks {
     @apply h-8 ease-in duration-100 hover:scale-110 invert dark:invert-0;
@@ -59,11 +66,47 @@
     @apply mt-4 dark:font-semibold
   }
 
+  .heroContainer {
+    @apply flex text-center sm:text-left flex-col md:flex-row mt-10 md:mt-2 mx-5 justify-center items-center
+  }
+
   .heroText {
-    @apply text-6xl md:text-8xl font-bold mb-4 text-teal-500 dark:text-teal-400
+    @apply text-6xl md:text-8xl font-bold mb-4 gradientText
+  }
+
+  .gradientText {
+    @apply bg-clip-text text-transparent animate-gradient
   }
 
   .sectionHeading {
     @apply text-4xl md:text-6xl font-bold text-teal-500 dark:text-teal-400 mb-5 md:mb-10 text-center md:text-left
+  }
+
+  .strongText {
+    @apply text-black dark:text-white
+  }
+
+  .animate-gradient {
+    background: linear-gradient(
+      to right,
+      var(--teal),
+      var(--blue),
+      var(--violet),
+      var(--pink),
+      var(--teal)
+    );
+    background-size: 200%;
+    -webkit-animation: animatedgradient 3s linear infinite;
+    -moz-animation: animatedgradient 3s linear infinite;
+    animation: animatedgradient 3s linear infinite;
+  }
+  
+  @keyframes animatedgradient {
+    0% {
+      background-position: 0% center;
+    }
+    100% {
+      background-position: -200% center;
+    }
   }
 }

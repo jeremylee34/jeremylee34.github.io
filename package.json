@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jeremylee34.github.io/React-portfolio",
+  "homepage": "https://jeremylee34.github.io/react-portfolio",
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
@@ -44,6 +44,7 @@
     ]
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
     "gh-pages": "^5.0.0",
     "tailwindcss": "^3.3.1"
   }

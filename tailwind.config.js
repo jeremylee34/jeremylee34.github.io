@@ -5,8 +5,13 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {},
+      animation: {}
+    },
   },
-  plugins: [],
+  plugins: [
+    require('autoprefixer'),
+  ],
 }
 

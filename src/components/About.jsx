@@ -3,12 +3,12 @@ import portrait from '../assets/images/sunnies.jpg'
 
 const About = () => {
   return (
-    <div className='pb-72 mx-5 md:mx-10'>
+    <div className='pb-72 mx-5 min-w-80'>
       <hr className='horizontalLine'/>
       <div className='flex flex-col md:flex-row justify-center items-center text-slate-800 dark:text-gray-400'>
         <div className='flex-col text-xl max-w-2xl text-center md:text-left'>
           <h1 className='sectionHeading'>About Me</h1>
-          <p>Hi 👋, my name is Jeremy and I am a young aspiring learner, with a passion for <strong className='text-black dark:text-white'>Software Engineering</strong> and <strong className='text-black dark:text-white'>Design</strong>.</p>
+          <p>Hi 👋, my name is Jeremy and I am a young aspiring learner, with a passion for <strong className='strongText'>Software Engineering</strong> and <strong className='strongText'>Design</strong>.</p>
           <p className='heroHeadings'>I am currently:</p>
           <ul className='list-disc'>
             <li className='inline-flex'>
