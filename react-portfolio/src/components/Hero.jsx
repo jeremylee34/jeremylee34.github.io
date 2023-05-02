@@ -18,7 +18,7 @@ const Hero = () => {
         <div className='inline-flex flex justify-center sm:justify-start text-3xl gap-3 text-slate-800 dark:text-gray-400'>
           HELLO! <img src={wave} className='h-10'/> I'M
         </div>
-        <h1 className='text-6xl md:text-8xl font-bold mb-4 text-teal-500 dark:text-teal-400'>Jeremy Lee</h1>
+        <h1 className='heroText'>Jeremy Lee</h1>
         <div className='inline-flex justify-center sm:justify-start text-2xl md:text-3xl gap-3 font-bold'>
           STUDENT 👨‍🎓 + DEVELOPER 👨‍💻
         </div>

@@ -52,11 +52,18 @@
   }
 
   .horizontalLine {
-    @apply mb-10 border-gray-400 dark:border-gray-700 mx-4
+    @apply mb-10 border-gray-400 dark:border-gray-700
   }
   
   .heroHeadings {
     @apply mt-4 dark:font-semibold
   }
-  
+
+  .heroText {
+    @apply text-6xl md:text-8xl font-bold mb-4 text-teal-500 dark:text-teal-400
+  }
+
+  .sectionHeading {
+    @apply text-4xl md:text-6xl font-bold text-teal-500 dark:text-teal-400 mb-5 md:mb-10 text-center md:text-left
+  }
 }
