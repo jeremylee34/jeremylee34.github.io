@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/React-portfolio/static/css/main.d1f2d76d.css",
-    "main.js": "/React-portfolio/static/js/main.9e7ef9a9.js",
+    "main.css": "/React-portfolio/static/css/main.da74854d.css",
+    "main.js": "/React-portfolio/static/js/main.60b2c3b9.js",
     "static/js/787.a2cb61a6.chunk.js": "/React-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/sunnies.jpg": "/React-portfolio/static/media/sunnies.ce8c440de671966ac6dd.jpg",
     "static/media/memoji-sticker-hd cropped.png": "/React-portfolio/static/media/memoji-sticker-hd cropped.8bdb926378f313bf52f8.png",
@@ -11,12 +11,12 @@
     "static/media/developer.png": "/React-portfolio/static/media/developer.eeda93f3366fac88027f.png",
     "static/media/github.png": "/React-portfolio/static/media/github.22cfdd1cba253783ce51.png",
     "index.html": "/React-portfolio/index.html",
-    "main.d1f2d76d.css.map": "/React-portfolio/static/css/main.d1f2d76d.css.map",
-    "main.9e7ef9a9.js.map": "/React-portfolio/static/js/main.9e7ef9a9.js.map",
+    "main.da74854d.css.map": "/React-portfolio/static/css/main.da74854d.css.map",
+    "main.60b2c3b9.js.map": "/React-portfolio/static/js/main.60b2c3b9.js.map",
     "787.a2cb61a6.chunk.js.map": "/React-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d1f2d76d.css",
-    "static/js/main.9e7ef9a9.js"
+    "static/css/main.da74854d.css",
+    "static/js/main.60b2c3b9.js"
   ]
 }
