@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.3447a47f.css",
-    "main.js": "/react-portfolio/static/js/main.bde3fa22.js",
+    "main.js": "/react-portfolio/static/js/main.49546039.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/sunnies.jpg": "/react-portfolio/static/media/sunnies.ce8c440de671966ac6dd.jpg",
     "static/media/memoji-sticker-hd cropped.png": "/react-portfolio/static/media/memoji-sticker-hd cropped.8bdb926378f313bf52f8.png",
@@ -12,11 +12,11 @@
     "static/media/github.png": "/react-portfolio/static/media/github.22cfdd1cba253783ce51.png",
     "index.html": "/react-portfolio/index.html",
     "main.3447a47f.css.map": "/react-portfolio/static/css/main.3447a47f.css.map",
-    "main.bde3fa22.js.map": "/react-portfolio/static/js/main.bde3fa22.js.map",
+    "main.49546039.js.map": "/react-portfolio/static/js/main.49546039.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3447a47f.css",
-    "static/js/main.bde3fa22.js"
+    "static/js/main.49546039.js"
   ]
 }
