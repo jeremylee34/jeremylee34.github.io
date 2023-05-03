@@ -8,7 +8,7 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
-      <About />
+      <About id='about-section' />
     </div>
   )
 }

@@ -19,7 +19,7 @@ const Burger = () => {
         <ul className='sidebarContent'>
           <li onClick={() => {setters.setSidebarOpen(!getters.sidebarOpen)}} className='sidebarLinks'>
             <Face5Icon />
-            <a href="#about" >About</a>
+            <a href="#about-section" >About</a>
           </li>
           <li onClick={() => {setters.setSidebarOpen(!getters.sidebarOpen)}} className='sidebarLinks'>
             <DeveloperModeIcon />

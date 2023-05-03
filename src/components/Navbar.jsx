@@ -18,7 +18,7 @@ const Navbar = () => {
         <img src={logo} alt="logo" className="invert h-10"/>  
       </a>
       <ul className='navLinkContainer'>
-        <li><a className='navLinks' href="#about" >About</a></li>
+        <li><a className='navLinks' href="#about-section" >About</a></li>
         <li><a className='navLinks' href="#projects" >Projects</a></li>
         {/* <li><a className='navLinks' href="#bookshelf" >Bookshelf</a></li> */}
         <li><a className='navLinks' href="#photos" >Photos</a></li>

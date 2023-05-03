@@ -3,8 +3,10 @@ import portrait from '../assets/images/sunnies.jpg'
 
 const About = () => {
   return (
-    <div className='pb-72 mx-5 min-w-80'>
-      <hr className='horizontalLine'/>
+    <div  id='about-section' className='pb-72 mx-5 min-w-80 '>
+      <div className='py-10 sm:py-12'>
+        <hr className='horizontalLine'/>
+      </div>
       <div className='flex flex-col md:flex-row justify-center items-center text-slate-800 dark:text-gray-400'>
         <div className='flex-col text-xl max-w-2xl text-center md:text-left'>
           <h1 className='sectionHeading'>About Me</h1>

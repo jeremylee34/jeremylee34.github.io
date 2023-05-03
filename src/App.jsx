@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import About from './components/About';
 import Burger from './components/Burger';
 import config from './config';
+import ReturnToTop from './components/ReturnToTop';
 
 function App() {
   const [darkMode, setDarkMode] = useState(initial.darkMode)
@@ -36,10 +37,10 @@ function App() {
     <div style={{ backgroundColor: bgColor, color: fontColor, transition: 'all 0.8s ease' }}>
       <Context.Provider value={{ getters, setters }}>
         <Burger />
+        <ReturnToTop />
         <BrowserRouter basename={config.BASE_NAME}>
           <Routes>
-            <Route path={`/`} element={<Home />}/>
-            <Route path='/#about' element={<About />}/>
+            <Route path='/' element={<Home />}/>
           </Routes>
         </BrowserRouter>
       </Context.Provider>

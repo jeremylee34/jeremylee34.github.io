@@ -40,7 +40,7 @@ width: 0px;
   }
 
   .navbar {
-    @apply sticky z-40 top-0 bg-black p-5 flex items-center justify-between drop-shadow-md 
+    @apply sticky z-40 top-0 bg-black p-3 flex items-center justify-between drop-shadow-md 
   }
 
   .navLinks {
@@ -80,7 +80,7 @@ width: 0px;
   }
 
   .horizontalLine {
-    @apply mb-10 border-gray-400 dark:border-gray-700
+    @apply border-gray-400 dark:border-gray-700
   }
   
   .heroHeadings {
@@ -88,7 +88,7 @@ width: 0px;
   }
 
   .heroContainer {
-    @apply flex text-center sm:text-left flex-col md:flex-row mt-10 md:mt-2 mx-5 justify-center items-center
+    @apply flex text-center sm:text-left flex-col md:flex-row mt-8 sm:mt-0 mx-5 justify-center items-center min-h-[calc(100vh-66px)]
   }
 
   .heroText {
@@ -105,6 +105,21 @@ width: 0px;
 
   .strongText {
     @apply text-black dark:text-white
+  }
+
+  .returnToTopButton {
+    @apply fixed z-50 right-[20px] bottom-[50px] sm:right-[40px] sm:bottom-[40px] cursor-pointer w-[75px] h-[75px] hover:scale-110 ease-in-out duration-100 animate-return-button
+  }
+
+  .animate-return-button {
+    -webkit-animation: return-button 500ms forwards;
+    -moz-animation: return-button 500ms forwards;
+    animation: return-button 500ms forwards;
+  }
+
+  @keyframes return-button {
+    from { bottom: 0vh; }
+    to { bottom: 10vh; }
   }
 
   .animate-gradient {
