@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.82f5c0bf.css",
-    "main.js": "/static/js/main.8a5b16ab.js",
+    "main.css": "/static/css/main.8ced58a9.css",
+    "main.js": "/static/js/main.8a7d835c.js",
     "static/js/787.e4c5ef8e.chunk.js": "/static/js/787.e4c5ef8e.chunk.js",
     "static/media/sunnies.jpg": "/static/media/sunnies.ce8c440de671966ac6dd.jpg",
     "static/media/memoji-sticker-hd cropped.png": "/static/media/memoji-sticker-hd cropped.8bdb926378f313bf52f8.png",
+    "static/media/Jeremy Lee CV 2023.pdf": "/static/media/Jeremy Lee CV 2023.c3c2f6d2c858959470e1.pdf",
     "static/media/logo.png": "/static/media/logo.ffa305d2d597a95ac3f5.png",
     "static/media/wave.png": "/static/media/wave.88670973abd8bf3eec42.png",
     "static/media/student.png": "/static/media/student.be17a6facb9f8dc52187.png",
@@ -12,12 +13,12 @@
     "static/media/github.png": "/static/media/github.22cfdd1cba253783ce51.png",
     "static/media/return-to-top-emoji.png": "/static/media/return-to-top-emoji.dce2316fb85b3b6d2bcb.png",
     "index.html": "/index.html",
-    "main.82f5c0bf.css.map": "/static/css/main.82f5c0bf.css.map",
-    "main.8a5b16ab.js.map": "/static/js/main.8a5b16ab.js.map",
+    "main.8ced58a9.css.map": "/static/css/main.8ced58a9.css.map",
+    "main.8a7d835c.js.map": "/static/js/main.8a7d835c.js.map",
     "787.e4c5ef8e.chunk.js.map": "/static/js/787.e4c5ef8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82f5c0bf.css",
-    "static/js/main.8a5b16ab.js"
+    "static/css/main.8ced58a9.css",
+    "static/js/main.8a7d835c.js"
   ]
 }
