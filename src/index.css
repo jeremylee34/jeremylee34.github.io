@@ -35,6 +35,40 @@ width: 0px;
     @apply h-8 ease-in duration-100 hover:scale-110 invert dark:invert-0;
   }
   
+  .wave-icon {
+    @apply h-10 hover:animate-wave cursor-pointer
+  }
+
+  .animate-wave {
+    -webkit-animation: wave 1s both;
+    -moz-animation: wave 1s both;
+    animation: wave 1s both;
+  }
+
+  @keyframes wave {
+    from {
+      transform: none;
+    }
+    15% {
+      transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
+    }
+    30% {
+      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
+    }
+    45% {
+      transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
+    }
+    60% {
+      transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
+    }
+    75% {
+      transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+    }
+    to {
+      transform: none;
+    }
+  }
+
   .about-section {
     @apply flex-col mx-5 sm:min-h-[100vh];
   }

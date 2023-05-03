@@ -17,7 +17,7 @@ const Hero = () => {
     <div className='heroContainer'>
       <div className='grid gap-y-4 max-w-2xl'>
         <div className='inline-flex flex justify-center sm:justify-start text-3xl gap-3 text-slate-800 dark:text-gray-400'>
-          HELLO! <img src={wave} className='h-10'/> I'M
+          HELLO! <img src={wave} className='wave-icon'/> I'M
         </div>
         <h1 className='heroText'>Jeremy Lee</h1>
         <div className='inline-flex justify-center sm:justify-start text-2xl md:text-3xl gap-3 font-bold'>
