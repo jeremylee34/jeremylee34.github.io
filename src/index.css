@@ -56,7 +56,30 @@ width: 0px;
   }
 
   .navbar {
-    @apply sticky z-40 top-0 bg-gray-200 dark:bg-black p-3 flex items-center justify-between drop-shadow-md
+    @apply sticky z-40 bg-gray-200 dark:bg-black p-3 flex items-center justify-between drop-shadow-md
+  }
+  
+  .animate-navbar-in {
+    -webkit-animation: navbarFrames 300ms ease-out;
+    -moz-animation: navbarFrames 300ms ease-out;
+    animation: navbarFrames 300ms ease-out;
+  }
+
+  .animate-navbar-out {
+    -webkit-animation: navbarFramesOut 300ms ease-out;
+    -moz-animation: navbarFramesOut 300ms ease-out;
+    animation: navbarFramesOut 300ms ease-out;
+  }
+
+
+  @keyframes navbarFrames {
+    from { top: -80px; }
+    to { top: 0; }
+  }
+
+  @keyframes navbarFramesOut {
+    from { top: 0; }
+    to { top: -80px; }
   }
 
   .navLinks {

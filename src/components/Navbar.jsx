@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useState, useEffect } from 'react'
 import logo from '../assets/images/logo.png'
 import { useNavigate } from 'react-router-dom'
 import DarkModeIcon from '@mui/icons-material/DarkMode';
@@ -11,9 +11,27 @@ import { toggleDarkMode } from '../helper';
 const Navbar = () => {
   const { getters, setters } = useContext(Context)
   const navigate = useNavigate()
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true)
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY
+
+    if (currentScrollPos > prevScrollPos) {
+      setVisible(false)
+    } else {
+      setVisible(true)
+    }
+    setPrevScrollPos(currentScrollPos)
+  }
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll)
+  })
 
   return (
-    <nav className='navbar'>
+    <nav className={`navbar ${visible ? 'top-0 animate-navbar-in' : 'top-[-80px] animate-navbar-out'} sm:top-0`}>
       <a className='cursor-pointer scale-75 hover:scale-90 ease-in duration-200' onClick={ () => navigate('/') }>
         <img src={logo} alt="logo" className="dark:invert h-10"/>  
       </a>
