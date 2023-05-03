@@ -7,6 +7,7 @@ import linkedin from '../assets/images/linkedin.png'
 import github from '../assets/images/github.png'
 import resume from '../assets/images/resume.png'
 import email from '../assets/images/email.png'
+import resumePDF from '../assets/Jeremy Lee CV 2023.pdf'
 import { Context, useContext } from '../context';
 
 const Hero = () => {
@@ -23,7 +24,7 @@ const Hero = () => {
           STUDENT 👨‍🎓 + DEVELOPER 👨‍💻
         </div>
         <div className='inline-flex-wrap text-2xl gap-3 text-slate-700 dark:text-gray-400'>
-          I'm a creative thinker 🧠, passionate to learn about <strong className='gradientText'>UX/UI</strong> 📱 and <strong className='gradientText'>Product Design</strong> 🧪
+          I'm a creative thinker 🧠, passionate to learn more about <strong className='gradientText'>Front-End</strong> 📱 and <strong className='gradientText'>UI/UX Design</strong> 🧪
         </div>
         <div className='flex my-3 justify-center sm:justify-start gap-6 invert'>
           <a href="https://www.linkedin.com/in/jeremylee7/" target="_blank">
@@ -32,7 +33,7 @@ const Hero = () => {
           <a href="https://github.com/jeremylee34" target="_blank">
             <img className='heroLinks' src={github} alt="github logo" />
           </a>
-          <a href="http://jeremyl.me/assets/images/Jeremy Lee CV 2023.pdf" target="_blank">
+          <a href={resumePDF} target="_blank">
             <img className='heroLinks' src={resume} alt="resume icon" />
           </a>
           <a href="mailto: jeremy.lee6857@gmail.com" target="_blank">

@@ -34,13 +34,25 @@ width: 0px;
   .heroLinks {
     @apply h-8 ease-in duration-100 hover:scale-110 invert dark:invert-0;
   }
+  
+  .about-section {
+    @apply flex-col mx-5 sm:min-h-[100vh];
+  }
+
+  .about-content {
+    @apply flex flex-col sm:min-h-[calc(100vh-6rem)] md:flex-row justify-center items-center text-slate-800 dark:text-gray-400
+  }
 
   .aboutLinks {
     @apply font-bold text-black dark:text-white hover:text-teal-600 hover:dark:text-teal-400;
   }
 
+  .about-text-section {
+    @apply flex-col text-xl sm:max-w-[50vw] md:max-w-[40vw] text-center md:text-left
+  }
+
   .aboutPortrait {
-    @apply rounded-full object-cover w-[90vw] h-[90vw] max-w-[300px] max-h-[300px] sm:max-w-none sm:max-h-none sm:min-h-[300px] sm:min-w-[300px] sm:w-[30vw] sm:h-[30vw] md:w-[25vw] md:h-[25vw] my-8 md:my-0
+    @apply rounded-full object-cover w-[90vw] h-[90vw] max-w-[300px] max-h-[300px] sm:max-w-none sm:max-h-none sm:min-h-[300px] sm:min-w-[300px] sm:w-[30vw] sm:h-[30vw] md:w-[25vw] md:h-[25vw] my-8 md:my-0 sm:ml-[5vw]
   }
 
   .navbar {
@@ -48,7 +60,7 @@ width: 0px;
   }
 
   .navLinks {
-    @apply hover:bg-gray-300 dark:hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200 hidden sm:flex text-gray-900 dark:text-gray-300;
+    @apply hover:bg-gray-300 dark:hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200 hidden sm:flex text-gray-900 dark:text-gray-300 hover:text-black dark:hover:text-white; 
   }
 
   .navLinkContainer {
@@ -60,7 +72,7 @@ width: 0px;
   }
 
   .burgerButton {
-    @apply sm:hidden sticky top-0 z-50  cursor-pointer p-2 pt-1 hover:bg-gray-900 rounded-full ease-in duration-200 
+    @apply sm:hidden sticky top-0 z-50  cursor-pointer p-2 pt-1 hover:bg-gray-900 rounded-full ease-in duration-200 invert dark:invert-0;
   }
 
   .burgerMenu {
@@ -96,7 +108,7 @@ width: 0px;
   }
 
   .heroText {
-    @apply text-6xl md:text-8xl font-bold pb-4 gradientText
+    @apply text-6xl md:text-9xl font-bold pb-4 gradientText
   }
 
   .gradientText {
@@ -104,7 +116,7 @@ width: 0px;
   }
 
   .sectionHeading {
-    @apply text-4xl md:text-6xl font-bold text-teal-500 dark:text-teal-400 mb-5 md:mb-10 text-center md:text-left
+    @apply text-5xl md:text-[80px] font-bold gradientText mb-5 md:mb-10 text-center md:text-left
   }
 
   .strongText {
@@ -157,7 +169,7 @@ width: 0px;
       var(--blue),
       var(--violet)
     );
-    @apply w-screen py-[50px] dark:bg-zinc-800 flex justify-center items-center
+    @apply w-screen pt-[50px] pb-[30px] dark:bg-zinc-800 flex justify-center items-center
   }
 
   .footer-icons {
@@ -165,10 +177,14 @@ width: 0px;
   }
 
   .footer-icon {
-    @apply h-[50px] w-[50px] invert dark:invert-0 hover:scale-105 ease-in-out duration-150
+    @apply h-[50px] w-[50px] invert-[95%] dark:invert-[10%] hover:scale-105 ease-in-out duration-150
   }
 
-  .footer-text {
-    @apply text-center text-[20px] mt-[20px] text-[#e8e6e3] dark:text-black
+  .footer-text-h1 {
+    @apply text-center text-[20px] mt-[20px] mb-[5px] text-[#e8e6e3] dark:text-black
+  }
+
+  .footer-text-p {
+    @apply text-center text-[13px] text-zinc-300 dark:text-zinc-900
   }
 }

@@ -1,16 +1,18 @@
 import React from 'react'
 import portrait from '../assets/images/sunnies.jpg'
+import StrongText from './StrongText'
 
 const About = () => {
   return (
-    <div id='about-section' className='mx-5 min-w-80 sm:min-h-[100vh]'>
-      <div className='py-10 sm:py-12'>
+    <div id='about-section' className='about-section'>
+      <div className='py-10'>
         <hr className='horizontalLine'/>
       </div>
-      <div className='flex flex-col md:flex-row justify-center items-center text-slate-800 dark:text-gray-400'>
-        <div className='flex-col text-xl sm:max-w-[60vw] text-center md:text-left'>
+      <div className='about-content'>
+        <div className='about-text-section'>
           <h1 className='sectionHeading'>About Me</h1>
-          <p>Hi 👋, my name is Jeremy and I am a young aspiring learner, with a passion for <strong className='strongText'>Software Engineering</strong> and <strong className='strongText'>Design</strong>.</p>
+          <p>Hi 👋, my name is Jeremy and I am a young aspiring learner, with a passion for <StrongText>front-end web development</StrongText> and <StrongText>design</StrongText>.</p>
+          <p>My front-end web development journey began in late 2022 when I self-taught myself <StrongText>HTML + CSS</StrongText> and made <a href='https://jeremyl.me/Personal-Portfolio-Website/' target="_blank"><StrongText className='gradientText hover:cursor-pointer'>my first website!</StrongText></a> Since, I have learnt <StrongText>ReactJS</StrongText> and <StrongText>Tailwind CSS</StrongText> to create modern and elegant web applications (such as this website!)</p>
           <p className='heroHeadings'>I am currently:</p>
           <ul className='list-disc'>
             <li className='inline-flex'>

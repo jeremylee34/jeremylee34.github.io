@@ -36,7 +36,10 @@ const Footer = () => {
               <img src={MailIcon} alt="email icon" />
             </a>
         </div>
-        <h1 className='footer-text'>© Jeremy Lee 2023</h1>
+        <div>
+          <h1 className='footer-text-h1'>© Jeremy Lee 2023</h1>
+          <p className='footer-text-p'>Made with React and Tailwind CSS</p>
+        </div>
       </div>
     </div>
   )
