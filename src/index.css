@@ -9,6 +9,27 @@
   --pink: rgb(244, 143, 177);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@-moz-document url-prefix() { /* Disable scrollbar Firefox */
+  html{
+    scrollbar-width: none;
+  }
+}
+
+body {
+  margin: 0; /* remove default margin */
+  scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
+  -ms-overflow-style: none;  /* Disable scrollbar IE 10+ */
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+width: 0px;
+  background: transparent; /* Disable scrollbar Chrome/Safari/Webkit */
+}
+
 @layer components {
   .heroLinks {
     @apply h-8 ease-in duration-100 hover:scale-110 invert dark:invert-0;
@@ -71,7 +92,7 @@
   }
 
   .heroText {
-    @apply text-6xl md:text-8xl font-bold mb-4 gradientText
+    @apply text-6xl md:text-8xl font-bold pb-4 gradientText
   }
 
   .gradientText {
