@@ -6,6 +6,7 @@ import { initDarkMode } from './helper';
 import Home from './pages/Home';
 import About from './components/About';
 import Burger from './components/Burger';
+import config from './config';
 
 function App() {
   const [darkMode, setDarkMode] = useState(initial.darkMode)
@@ -35,9 +36,9 @@ function App() {
     <div style={{ backgroundColor: bgColor, color: fontColor, transition: 'all 0.8s ease' }}>
       <Context.Provider value={{ getters, setters }}>
         <Burger />
-        <BrowserRouter>
+        <BrowserRouter basename={config.BASE_NAME}>
           <Routes>
-            <Route path={`/${baseUrl}`} element={<Home />}/>
+            <Route path={`/`} element={<Home />}/>
             <Route path='/#about' element={<About />}/>
           </Routes>
         </BrowserRouter>
