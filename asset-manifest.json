@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.82174e12.css",
-    "main.js": "/static/js/main.8a7d835c.js",
+    "main.css": "/static/css/main.bace4ae8.css",
+    "main.js": "/static/js/main.af84396f.js",
     "static/js/787.e4c5ef8e.chunk.js": "/static/js/787.e4c5ef8e.chunk.js",
     "static/media/sunnies.jpg": "/static/media/sunnies.ce8c440de671966ac6dd.jpg",
     "static/media/memoji-sticker-hd cropped.png": "/static/media/memoji-sticker-hd cropped.8bdb926378f313bf52f8.png",
@@ -13,12 +13,12 @@
     "static/media/github.png": "/static/media/github.22cfdd1cba253783ce51.png",
     "static/media/return-to-top-emoji.png": "/static/media/return-to-top-emoji.dce2316fb85b3b6d2bcb.png",
     "index.html": "/index.html",
-    "main.82174e12.css.map": "/static/css/main.82174e12.css.map",
-    "main.8a7d835c.js.map": "/static/js/main.8a7d835c.js.map",
+    "main.bace4ae8.css.map": "/static/css/main.bace4ae8.css.map",
+    "main.af84396f.js.map": "/static/js/main.af84396f.js.map",
     "787.e4c5ef8e.chunk.js.map": "/static/js/787.e4c5ef8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.82174e12.css",
-    "static/js/main.8a7d835c.js"
+    "static/css/main.bace4ae8.css",
+    "static/js/main.af84396f.js"
   ]
 }
