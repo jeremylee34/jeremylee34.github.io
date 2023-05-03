@@ -3,12 +3,12 @@ import portrait from '../assets/images/sunnies.jpg'
 
 const About = () => {
   return (
-    <div  id='about-section' className='pb-72 mx-5 min-w-80 '>
+    <div id='about-section' className='mx-5 min-w-80 sm:min-h-[100vh]'>
       <div className='py-10 sm:py-12'>
         <hr className='horizontalLine'/>
       </div>
       <div className='flex flex-col md:flex-row justify-center items-center text-slate-800 dark:text-gray-400'>
-        <div className='flex-col text-xl max-w-2xl text-center md:text-left'>
+        <div className='flex-col text-xl sm:max-w-[60vw] text-center md:text-left'>
           <h1 className='sectionHeading'>About Me</h1>
           <p>Hi 👋, my name is Jeremy and I am a young aspiring learner, with a passion for <strong className='strongText'>Software Engineering</strong> and <strong className='strongText'>Design</strong>.</p>
           <p className='heroHeadings'>I am currently:</p>
@@ -42,11 +42,11 @@ const About = () => {
             <li><p>•&nbsp; Read Books 📚</p></li>
             <li><p>•&nbsp; Lift Weights 🏋️‍♂️</p></li>
             <li><p>•&nbsp; Walk my dog 🐕</p></li>
-            <li><p>•&nbsp; Take sunset pics TESTtt 📷</p></li>
+            <li><p>•&nbsp; Take sunset pics 📷</p></li>
           </ul>
         </div>
         <div>
-          <img className='rounded-full object-cover w-80 h-80 my-8 md:my-0' src={portrait} alt="portrait pic" />
+          <img className='aboutPortrait' src={portrait} alt="portrait pic" />
         </div>
       </div>
     </div>

@@ -18,20 +18,20 @@ const Burger = () => {
       <div className={`sidebar ${getters.sidebarOpen ? "translate-x-0 " : "translate-x-full"}`}>
         <ul className='sidebarContent'>
           <li onClick={() => {setters.setSidebarOpen(!getters.sidebarOpen)}} className='sidebarLinks'>
-            <Face5Icon />
+            {/* <Face5Icon /> */}
             <a href="#about-section" >About</a>
           </li>
           <li onClick={() => {setters.setSidebarOpen(!getters.sidebarOpen)}} className='sidebarLinks'>
-            <DeveloperModeIcon />
+            {/* <DeveloperModeIcon /> */}
             <a href="#projects" >Projects</a>
           </li>
           <li onClick={() => {setters.setSidebarOpen(!getters.sidebarOpen)}} className='sidebarLinks'>
-            <PanoramaIcon />
+            {/* <PanoramaIcon /> */}
             <a href="#photos" >Photos</a>
           </li>
           <li onClick={() => {setters.setSidebarOpen(!getters.sidebarOpen)}} className='sidebarLinks'>
-            <PermContactCalendarIcon />
-            <a href="#contact" >Contact</a>
+            {/* <PermContactCalendarIcon /> */}
+            <a href="#contact-section" >Contact</a>
           </li>
           
         </ul>
@@ -39,5 +39,5 @@ const Burger = () => {
     </div>
   )
 }
-
+  
 export default Burger

@@ -39,12 +39,16 @@ width: 0px;
     @apply font-bold text-black dark:text-white hover:text-teal-600 hover:dark:text-teal-400;
   }
 
+  .aboutPortrait {
+    @apply rounded-full object-cover w-[90vw] h-[90vw] max-w-[300px] max-h-[300px] sm:max-w-none sm:max-h-none sm:min-h-[300px] sm:min-w-[300px] sm:w-[30vw] sm:h-[30vw] md:w-[25vw] md:h-[25vw] my-8 md:my-0
+  }
+
   .navbar {
-    @apply sticky z-40 top-0 bg-black p-3 flex items-center justify-between drop-shadow-md 
+    @apply sticky z-40 top-0 bg-gray-200 dark:bg-black p-3 flex items-center justify-between drop-shadow-md
   }
 
   .navLinks {
-    @apply hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200 hidden sm:flex;
+    @apply hover:bg-gray-300 dark:hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200 hidden sm:flex text-gray-900 dark:text-gray-300;
   }
 
   .navLinkContainer {
@@ -52,7 +56,7 @@ width: 0px;
   }
 
   .darkModeButton {
-    @apply cursor-pointer p-2 pt-1 hover:bg-gray-900 rounded-full ease-in duration-200
+    @apply cursor-pointer p-2 pt-1 hover:bg-gray-800 dark:hover:bg-gray-900 rounded-full ease-in duration-200 invert dark:invert-0;
   }
 
   .burgerButton {
@@ -68,7 +72,7 @@ width: 0px;
   }
 
   .sidebarLinks {
-    @apply flex items-center gap-5 text-3xl font-semibold text-white mb-5
+    @apply flex items-center gap-5 text-2xl text-white mb-5
   }
 
   .clickOut {
@@ -144,5 +148,27 @@ width: 0px;
     100% {
       background-position: -200% center;
     }
+  }
+
+  .footer {
+    background: linear-gradient(
+      40deg,
+      var(--teal),
+      var(--blue),
+      var(--violet)
+    );
+    @apply w-screen py-[50px] dark:bg-zinc-800 flex justify-center items-center
+  }
+
+  .footer-icons {
+    @apply flex flex-wrap gap-5 mx-[20vw] justify-center
+  }
+
+  .footer-icon {
+    @apply h-[50px] w-[50px] invert dark:invert-0 hover:scale-105 ease-in-out duration-150
+  }
+
+  .footer-text {
+    @apply text-center text-[20px] mt-[20px] text-[#e8e6e3] dark:text-black
   }
 }

@@ -15,14 +15,14 @@ const Navbar = () => {
   return (
     <nav className='navbar'>
       <a className='cursor-pointer scale-75 hover:scale-90 ease-in duration-200' onClick={ () => navigate('/') }>
-        <img src={logo} alt="logo" className="invert h-10"/>  
+        <img src={logo} alt="logo" className="dark:invert h-10"/>  
       </a>
       <ul className='navLinkContainer'>
         <li><a className='navLinks' href="#about-section" >About</a></li>
         <li><a className='navLinks' href="#projects" >Projects</a></li>
         {/* <li><a className='navLinks' href="#bookshelf" >Bookshelf</a></li> */}
         <li><a className='navLinks' href="#photos" >Photos</a></li>
-        <li><a className='navLinks' href="#contact" >Contact</a></li>
+        <li><a className='navLinks' href="#contact-section" >Contact</a></li>
         <li className='darkModeButton'
           onClick={() => {
             toggleDarkMode(getters, setters)
