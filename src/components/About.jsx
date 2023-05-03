@@ -42,7 +42,7 @@ const About = () => {
             <li><p>•&nbsp; Read Books 📚</p></li>
             <li><p>•&nbsp; Lift Weights 🏋️‍♂️</p></li>
             <li><p>•&nbsp; Walk my dog 🐕</p></li>
-            <li><p>•&nbsp; Take sunset pics 📷</p></li>
+            <li><p>•&nbsp; Take sunset pics TEST 📷</p></li>
           </ul>
         </div>
         <div>
