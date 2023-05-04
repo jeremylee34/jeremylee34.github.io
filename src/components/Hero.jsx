@@ -12,7 +12,6 @@ import NextSection from './NextSection'
 
 const Hero = () => {
   const { ref: myRef, inView: heroVisible } = useInView()
-
   useEffect(() => {
     if (heroVisible === true) {
       animateHeroText()
