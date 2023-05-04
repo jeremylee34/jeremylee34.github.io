@@ -29,3 +29,52 @@ export function initDarkMode(setDarkMode, setters) {
     document.documentElement.classList.remove('dark')
   }
 }
+
+export function animateNavLinks() {
+  const navbarLinks = document.querySelectorAll('.navLinks');
+  var index = 0
+  navbarLinks.forEach((link) => {
+    var style = window.getComputedStyle(link)
+    if (style.display !== 'none') {
+      setTimeout(() => {
+        link.classList.add('animate');
+      }, 100 * (index + 1));
+      index += 1
+    }
+  });
+}
+
+export function animateHeroText() {
+  const navbarLinks = document.querySelectorAll('.hero-text-slide');
+  var index = 0
+  navbarLinks.forEach((link) => {
+    var style = window.getComputedStyle(link)
+    link.classList.remove('animate')
+    if (style.display !== 'none') {
+      setTimeout(() => {
+        link.classList.add('animate');
+      }, 100 * (index + 1));
+      index += 1
+    }
+  });
+
+  const heroIcon = document.querySelectorAll('.memoji')[0]
+  heroIcon.classList.add('animate')
+}
+
+export function animateAboutText() {
+  const navbarLinks = document.querySelectorAll('.about-text-slide');
+  var index = 0
+  navbarLinks.forEach((link) => {
+    var style = window.getComputedStyle(link)
+    link.classList.remove('animate')
+    if (style.display !== 'none') {
+      setTimeout(() => {
+        link.classList.add('animate');
+      }, 100 * (index + 1));
+      index += 1
+    }
+  });
+  const heroIcon = document.querySelectorAll('.aboutPortrait')[0]
+  heroIcon.classList.add('animate')
+}

@@ -31,9 +31,6 @@ width: 0px;
 }
 
 @layer components {
-  .heroLinks {
-    @apply h-8 ease-in duration-100 hover:scale-110 invert dark:invert-0;
-  }
   
   .wave-icon {
     @apply h-10 hover:animate-wave cursor-pointer
@@ -70,7 +67,7 @@ width: 0px;
   }
 
   .about-section {
-    @apply flex-col mx-5 sm:min-h-[100vh];
+    @apply flex-col mx-5 sm:mx-0 sm:min-h-[100vh] pt-[20px] sm:pt-[80px];
   }
 
   .about-content {
@@ -87,6 +84,10 @@ width: 0px;
 
   .aboutPortrait {
     @apply rounded-full object-cover w-[90vw] h-[90vw] max-w-[300px] max-h-[300px] sm:max-w-none sm:max-h-none sm:min-h-[300px] sm:min-w-[300px] sm:w-[30vw] sm:h-[30vw] md:w-[25vw] md:h-[25vw] my-8 md:my-0 sm:ml-[5vw]
+  }
+
+  .aboutPortrait.animate {
+    @apply animate-jump-in animate-once animate-fill-backwards
   }
 
   .navbar {
@@ -116,16 +117,69 @@ width: 0px;
     to { top: -80px; }
   }
 
+  .logoLink {
+    @apply dark:invert h-10 cursor-pointer h-[25px] ml-[10px];
+  }
+
+  .navSectionLinks {
+    @apply hover:bg-gray-300 dark:hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200 hidden sm:flex text-gray-900 dark:text-gray-300 hover:text-black dark:hover:text-white text-[17px]; 
+  }
+
   .navLinks {
-    @apply hover:bg-gray-300 dark:hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200 hidden sm:flex text-gray-900 dark:text-gray-300 hover:text-black dark:hover:text-white; 
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  }
+
+  .navLinks.animate {
+    opacity: 1;
+    transform: none;
+  }
+
+  .hero-text-slide {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.2s ease-out;
+  }
+
+  .hero-text-slide.animate {
+    opacity: 1;
+    transform: none;
+  }
+
+  .about-text-slide {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease-out, transform 0.2s ease-out;
+  }
+
+  .about-text-slide.animate {
+    opacity: 1;
+    transform: none;
+  }
+
+  .memoji {
+    @apply object-contain w-52 md:w-72 mb-20 mt-2 sm:ml-[50px] opacity-0;
+    transform: translateX(-800px);
+    transition: opacity 1s ease-in;
+  }
+
+  .memoji.animate {
+    @apply animate-jump-in animate-once;
+    opacity: 1;
+    transform: none;
   }
 
   .navLinkContainer {
-    @apply flex items-center justify-center gap-2 text-white text-lg
+    @apply flex items-center justify-center gap-1 text-white text-lg
   }
 
   .darkModeButton {
     @apply cursor-pointer p-2 pt-1 hover:bg-gray-800 dark:hover:bg-gray-900 rounded-full ease-in duration-200 invert dark:invert-0;
+  }
+
+  .darkMode-animate {
+    @apply animate-fade-down animate-once animate-fill-forwards
   }
 
   .burgerButton {
@@ -149,11 +203,30 @@ width: 0px;
   }
 
   .roleText {
-    @apply text-teal-600 dark:text-teal-400
+    @apply text-teal-600 dark:text-teal-400 font-bold
+  }
+
+  .home-container {
+    /* overflow-y: auto; */
+    /* overscroll-behavior-y: contain; */
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-snap-type: y proximity;
+    scrollbar-width: none; /* Also needed to disable scrollbar Firefox */
+    -ms-overflow-style: none;  /* Disable scrollbar IE 10+ */
   }
 
   .horizontalLine {
     @apply border-gray-400 dark:border-gray-700
+  }
+
+  .heroLinks {
+    @apply h-8 hover:scale-110 invert dark:invert-0;
+  }
+
+  .hero-link-container {
+    @apply flex my-3 justify-center sm:justify-start gap-6 invert
   }
   
   .heroHeadings {
@@ -161,11 +234,23 @@ width: 0px;
   }
 
   .heroContainer {
-    @apply flex text-center sm:text-left flex-col md:flex-row mt-8 sm:mt-0 mx-5 justify-center items-center min-h-[calc(100vh-66px)]
+    @apply flex text-center sm:text-left flex-col md:flex-row sm:pt-0 mx-3 sm:mx-0 justify-center items-center min-h-[100vh]
   }
 
   .heroText {
-    @apply text-6xl md:text-9xl font-bold pb-4 gradientText
+    @apply text-6xl md:text-9xl font-bold pb-5 gradientText
+  }
+
+  .hero-subtext {
+    @apply text-2xl gap-3 text-slate-700 dark:text-gray-400
+  }
+
+  .titles-text {
+    @apply inline-flex justify-center sm:justify-start text-2xl md:text-3xl gap-3 font-bold
+  }
+
+  .greeting {
+    @apply inline-flex flex justify-center sm:justify-start text-3xl gap-3 text-slate-800 dark:text-gray-400 mt-[50px]
   }
 
   .gradientText {
@@ -244,4 +329,29 @@ width: 0px;
   .footer-text-p {
     @apply text-center text-[13px] text-zinc-300 dark:text-zinc-900
   }
+
+  .next-section-button {
+    @apply bottom-[80px] section-button;
+    background-image: url('./assets/images/down-chevron.png');
+  }
+
+  .prev-section-button {
+    @apply rotate-180 top-[50px] section-button;
+    background-image: url('./assets/images/down-chevron.png');
+  }
+
+  .section-button {
+    @apply bg-contain bg-no-repeat h-[40px] w-[40px] block relative left-0 right-0 m-auto cursor-pointer opacity-[5%] invert-0 dark:invert pulse-icon;
+  }
+  
+  .pulse-icon {
+    -webkit-animation: pulse 1.5s ease-in-out infinite alternate;
+    -moz-animation: pulse 1.5s ease-in-out infinite alternate;
+    animation: pulse 1.5s ease-in-out infinite alternate;
+  }
+
+  @keyframes pulse {
+    100% { opacity: 20% }
+  }
+
 }

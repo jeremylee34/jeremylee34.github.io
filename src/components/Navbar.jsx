@@ -6,17 +6,17 @@ import LightModeIcon from '@mui/icons-material/LightMode';
 import MenuIcon from '@mui/icons-material/Menu';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import { Context, useContext } from '../context';
-import { toggleDarkMode } from '../helper';
+import { toggleDarkMode, animateNavLinks } from '../helper';
 
 const Navbar = () => {
   const { getters, setters } = useContext(Context)
   const navigate = useNavigate()
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [prevScrollPos, setPrevScrollPos] = useState();
   const [visible, setVisible] = useState(true)
 
   const handleScroll = () => {
-    const currentScrollPos = window.scrollY
-
+    const homeWindow = document.getElementById('home-container')
+    const currentScrollPos = homeWindow.scrollTop
     if (currentScrollPos > prevScrollPos && window.innerWidth < 768) {
       setVisible(false)
     } else {
@@ -26,22 +26,31 @@ const Navbar = () => {
   }
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    animateNavLinks()
+    const homeWindow = document.getElementById('home-container')
+    homeWindow.addEventListener('scroll', handleScroll);
+    const btn = document.querySelector('.darkModeButton')
+    btn.addEventListener('click', () => {
+      btn.classList.add('darkMode-animate')
+      setTimeout(() => {
+        btn.classList.remove('darkMode-animate')
+      }, 1000);
+    })
     return () => window.removeEventListener('scroll', handleScroll)
   })
 
   return (
     <nav className={`navbar ${visible ? 'top-0 animate-navbar-in' : 'top-[-80px] animate-navbar-out'} sm:top-0`}>
-      <a className='cursor-pointer scale-75 hover:scale-90 ease-in duration-200' onClick={ () => navigate('/') }>
-        <img src={logo} alt="logo" className="dark:invert h-10"/>  
+      <a onClick={ () => navigate('/') }>
+        <img src={logo} alt="logo" className="logoLink navLinks hover:scale-105 ease-in duration-200"/>  
       </a>
       <ul className='navLinkContainer'>
-        <li><a className='navLinks' href="#about-section" >About</a></li>
-        <li><a className='navLinks' href="#projects" >Projects</a></li>
-        {/* <li><a className='navLinks' href="#bookshelf" >Bookshelf</a></li> */}
-        <li><a className='navLinks' href="#photos" >Photos</a></li>
-        <li><a className='navLinks' href="#contact-section" >Contact</a></li>
-        <li className='darkModeButton'
+        <li><a className='navLinks navSectionLinks' href="#home-section" >Home</a></li>
+        <li><a className='navLinks navSectionLinks' href="#about-section" >About</a></li>
+        {/* <li><a className='navLinks navSectionLinks' href="#projects" >Projects</a></li> */}
+        {/* <li><a className='navLinks navSectionLinks' href="#photos" >Photos</a></li> */}
+        <li><a className='navLinks navSectionLinks' href="#contact-section" >Contact</a></li>
+        <li className='navLinks darkModeButton'
           onClick={() => {
             toggleDarkMode(getters, setters)
           }}
@@ -51,7 +60,7 @@ const Navbar = () => {
             : <DarkModeIcon></DarkModeIcon>
           }
         </li>
-        <li className='burgerButton'
+        <li className='navLinks burgerButton'
           onClick={() => {
             setters.setSidebarOpen(!getters.sidebarOpen)
           }}

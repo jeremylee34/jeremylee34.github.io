@@ -19,16 +19,20 @@ const Burger = () => {
         <ul className='sidebarContent'>
           <li onClick={() => {setters.setSidebarOpen(!getters.sidebarOpen)}} className='sidebarLinks'>
             {/* <Face5Icon /> */}
-            <a href="#about-section" >About</a>
+            <a href="#home-section" >Home</a>
           </li>
           <li onClick={() => {setters.setSidebarOpen(!getters.sidebarOpen)}} className='sidebarLinks'>
-            {/* <DeveloperModeIcon /> */}
+            {/* <Face5Icon /> */}
+            <a href="#about-section" >About</a>
+          </li>
+          {/* <li onClick={() => {setters.setSidebarOpen(!getters.sidebarOpen)}} className='sidebarLinks'>
+            <DeveloperModeIcon />
             <a href="#projects" >Projects</a>
           </li>
           <li onClick={() => {setters.setSidebarOpen(!getters.sidebarOpen)}} className='sidebarLinks'>
-            {/* <PanoramaIcon /> */}
+            <PanoramaIcon />
             <a href="#photos" >Photos</a>
-          </li>
+          </li> */}
           <li onClick={() => {setters.setSidebarOpen(!getters.sidebarOpen)}} className='sidebarLinks'>
             {/* <PermContactCalendarIcon /> */}
             <a href="#contact-section" >Contact</a>

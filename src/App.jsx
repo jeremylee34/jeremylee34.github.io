@@ -37,7 +37,6 @@ function App() {
     <div style={{ backgroundColor: bgColor, color: fontColor, transition: 'all 0.8s ease' }}>
       <Context.Provider value={{ getters, setters }}>
         <Burger />
-        <ReturnToTop />
         <BrowserRouter basename={config.BASE_NAME}>
           <Routes>
             <Route path='/' element={<Home />}/>

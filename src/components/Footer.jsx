@@ -8,7 +8,7 @@ import MailIcon from "../assets/images/mail.png"
 
 const Footer = () => {
   return (
-    <div id='contact-section' className='footer'>
+    <div id='contact-section' className='footer snap-bottom'>
       <div className='footer-box'>
         <div className='footer-icons'>
             <a className='footer-icon' href="https://open.spotify.com/user/egzgqd1rtehhu6m7d604qz42q?si=cf3bda32d4f2490c"
