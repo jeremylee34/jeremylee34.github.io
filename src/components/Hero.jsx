@@ -29,6 +29,7 @@ const Hero = () => {
           <div className='greeting hero-text-slide'>
             HELLO! <img src={wave} className='wave-icon' onClick={animateHeroText}/> I'M
           </div>
+          
           <h1 className='heroText hero-text-slide'>Jeremy Lee</h1>
           <div className='titles-text hero-text-slide'>
             <span>STUDENT 👨‍🎓 + DEVELOPER 👨‍💻</span>
