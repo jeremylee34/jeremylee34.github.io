@@ -25,7 +25,7 @@ const About = () => {
         <div className='about-text-section'>
           <h1 className='sectionHeading about-text-slide'>About Me</h1>
           <p className='about-text-slide'>Hi 👋, my name is Jeremy and I am a young aspiring learner, with a passion for <StrongText>front-end web development</StrongText> and <StrongText>design</StrongText>.</p>
-          <p className='about-text-slide'>My front-end web development journey began in late 2022 when I self-taught myself <StrongText>HTML + CSS</StrongText> and made <a href='https://jeremyl.me/Personal-Portfolio-Website/' target="_blank"><StrongText className='gradientText hover:cursor-pointer'>my first website!</StrongText></a> Since, I have learnt <StrongText>ReactJS</StrongText> and <StrongText>Tailwind CSS</StrongText> to create modern and elegant web applications (such as this website!)</p>
+          <p className='about-text-slide'>My front-end web development journey began in early 2022 when I self-taught myself <StrongText>HTML + CSS</StrongText> and made <a href='https://jeremyl.me/Personal-Portfolio-Website/' target="_blank"><StrongText className='gradientText hover:cursor-pointer'>my first website!</StrongText></a> Since, I have learnt <StrongText>ReactJS</StrongText> and <StrongText>Tailwind CSS</StrongText> to create modern and elegant web applications (such as this website!)</p>
           <p className='heroHeadings about-text-slide'>I am currently:</p>
           <ul className='list-disc'>
             <li className='inline-flex'>
