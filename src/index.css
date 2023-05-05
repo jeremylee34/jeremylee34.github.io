@@ -234,7 +234,7 @@ width: 0px;
   }
 
   .heroContainer {
-    @apply flex text-center sm:text-left flex-col md:flex-row sm:pt-0 mx-3 sm:mx-0 justify-center items-center min-h-[100vh]
+    @apply flex text-center sm:text-left flex-col md:flex-row sm:pt-0 mx-3 sm:mx-8 justify-center items-center min-h-[100vh]
   }
 
   .heroText {
