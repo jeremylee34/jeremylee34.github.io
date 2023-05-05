@@ -29,7 +29,7 @@ const About = () => {
           <p className='heroHeadings about-text-slide'>I am currently:</p>
           <ul className='list-disc'>
             <li className='inline-flex'>
-              <p className='roleText about-text-slide'>•&nbsp; Penultimate Computer Science <a className='aboutLinks' href="https://au.linkedin.com/school/unsw/" target="_blank"
+              <p className='roleText about-text-slide'>•&nbsp; Final Year Computer Science <a className='aboutLinks' href="https://au.linkedin.com/school/unsw/" target="_blank"
               >@ UNSW</a></p>
             </li><br />
             <li className='inline-flex'>
