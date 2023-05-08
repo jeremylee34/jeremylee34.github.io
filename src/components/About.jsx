@@ -57,7 +57,7 @@ const About = () => {
             <li><p className='about-text-slide'>•&nbsp; Read Books 📚</p></li>
             <li><p className='about-text-slide'>•&nbsp; Lift Weights 🏋️‍♂️</p></li>
             <li><p className='about-text-slide'>•&nbsp; Walk my dog 🐕</p></li>
-            <li><p className='about-text-slide'>•&nbsp; Take sunset pics 📷</p></li>
+            <li><p className='about-text-slide'>•&nbsp; Take nice pics 📷</p></li>
           </ul>
         </div>
         <div>
