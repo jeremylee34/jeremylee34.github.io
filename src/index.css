@@ -76,6 +76,26 @@ width: 0px;
 
   .aboutLinks {
     @apply font-bold text-black dark:text-white hover:text-teal-600 hover:dark:text-teal-400;
+    background:
+    linear-gradient(
+      to right,
+      rgba(100, 200, 200, 1),
+      rgba(100, 200, 200, 1)
+    ),
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+  background-size: 100% 2px, 0 2px;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+  }
+  
+  .aboutLinks:hover {
+    background-size: 0 2px, 100% 2px;
   }
 
   .about-text-section {
