@@ -91,7 +91,7 @@ width: 0px;
   }
 
   .navbar {
-    @apply sticky z-40 bg-gray-200 dark:bg-black p-3 flex items-center justify-between drop-shadow-md
+    @apply sticky z-40 p-3 flex items-center justify-between bg-[#E2E8F0] dark:bg-[#171717]
   }
   
   .animate-navbar-in {
