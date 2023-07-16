@@ -67,7 +67,7 @@ width: 0px;
   }
 
   .about-section {
-    @apply flex-col mx-5 sm:mx-0 sm:min-h-[100vh] pt-[20px] sm:pt-[80px];
+    @apply flex-col mx-5 sm:mx-auto sm:min-h-[100vh] pt-[20px] sm:pt-[80px] sm:max-w-[65vw];
   }
 
   .about-content {
@@ -99,7 +99,7 @@ width: 0px;
   }
 
   .about-text-section {
-    @apply flex-col text-xl sm:max-w-[50vw] md:max-w-[40vw] text-center md:text-left
+    @apply flex-col text-xl sm:max-w-[50vw] md:max-w-[35vw] text-center md:text-left
   }
 
   .aboutPortrait {
@@ -111,7 +111,7 @@ width: 0px;
   }
 
   .navbar {
-    @apply sticky z-40 p-3 flex items-center justify-between bg-[#E2E8F0] dark:bg-[#171717]
+    @apply sticky z-40 p-3 flex items-center justify-between bg-[#ebebeb] dark:bg-[#171717]
   }
   
   .animate-navbar-in {
@@ -142,7 +142,7 @@ width: 0px;
   }
 
   .navSectionLinks {
-    @apply hover:bg-gray-300 dark:hover:bg-gray-900 py-2 px-4 rounded ease-in duration-200 hidden sm:flex text-gray-900 dark:text-gray-300 hover:text-black dark:hover:text-white text-[17px]; 
+    @apply hover:bg-gray-300 dark:hover:bg-gray-800 py-2 px-4 rounded ease-in duration-200 hidden sm:flex text-gray-900 dark:text-gray-300 hover:text-black dark:hover:text-white text-[17px]; 
   }
 
   .navLinks {
@@ -179,7 +179,7 @@ width: 0px;
   }
 
   .memoji {
-    @apply object-contain w-52 md:w-72 mb-20 mt-2 sm:ml-[50px] opacity-0;
+    @apply object-contain w-52 md:w-72 mb-20 sm:mb-0 mt-2 sm:ml-[50px] opacity-0;
     transform: translateX(-800px);
     transition: opacity 1s ease-in;
   }
@@ -195,7 +195,7 @@ width: 0px;
   }
 
   .darkModeButton {
-    @apply cursor-pointer p-2 pt-1 hover:bg-gray-800 dark:hover:bg-gray-900 rounded-full ease-in duration-200 invert dark:invert-0;
+    @apply cursor-pointer p-2 pt-1 hover:bg-gray-800 dark:hover:bg-gray-800 rounded-full ease-in duration-200 invert dark:invert-0;
   }
 
   .darkMode-animate {
@@ -254,7 +254,7 @@ width: 0px;
   }
 
   .heroContainer {
-    @apply flex text-center sm:text-left flex-col md:flex-row sm:pt-0 mx-3 sm:mx-8 justify-center items-center min-h-[100vh]
+    @apply flex text-center sm:text-left flex-col md:flex-row sm:pt-0 mx-3 sm:mx-auto justify-between items-center min-h-[100vh] sm:max-w-[65vw]
   }
 
   .heroText {
@@ -372,6 +372,14 @@ width: 0px;
 
   @keyframes pulse {
     100% { opacity: 20% }
+  }
+
+  .text-balance {
+    max-inline-size: 60ch;
+  }
+
+  .chip-container {
+    @apply flex justify-center sm:justify-start flex-wrap gap-[10px] mt-[15px];
   }
 
 }

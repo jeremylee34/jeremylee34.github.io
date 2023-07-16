@@ -2,7 +2,7 @@ export function toggleDarkMode(getters, setters) {
   if (localStorage.getItem('darkMode') === 'true') {
     localStorage.setItem('darkMode', 'false')
     setters.setDarkMode('false')
-    setters.setBgColor('#E2E8F0')
+    setters.setBgColor('#ebebeb')
     setters.setFontColor('black')
     document.documentElement.classList.remove('dark')
   } else {
@@ -24,7 +24,7 @@ export function initDarkMode(setDarkMode, setters) {
     setters.setFontColor('#e8e6e3')
     document.documentElement.classList.add('dark');
   } else {
-    setters.setBgColor('#E2E8F0')
+    setters.setBgColor('#ebebeb')
     setters.setFontColor('black')
     document.documentElement.classList.remove('dark')
   }

@@ -24,7 +24,7 @@ const Hero = () => {
   return (
     <div id='home-section'>
       <div className='heroContainer snap-top sm:snap-center'>
-        <div className='grid gap-y-4 max-w-2xl ' ref={myRef}>
+        <div className='grid gap-y-4 max-w-2xl' ref={myRef}>
           <div className='greeting hero-text-slide'>
             HELLO! <img src={wave} className='wave-icon' onClick={animateHeroText}/> I'M
           </div>
