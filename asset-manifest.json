@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac98498b.css",
-    "main.js": "/static/js/main.030dec7f.js",
+    "main.css": "/static/css/main.a163fa4a.css",
+    "main.js": "/static/js/main.b63b419f.js",
     "static/js/787.e4c5ef8e.chunk.js": "/static/js/787.e4c5ef8e.chunk.js",
     "static/media/sunnies.jpg": "/static/media/sunnies.ce8c440de671966ac6dd.jpg",
     "static/media/postgresql.png": "/static/media/postgresql.c8891cc79d21bc263a06.png",
@@ -13,6 +13,7 @@
     "static/media/react.png": "/static/media/react.86c8d9eba03e29814d2a.png",
     "static/media/wave.png": "/static/media/wave.88670973abd8bf3eec42.png",
     "static/media/jira.png": "/static/media/jira.bfdaee442bc8319cfff3.png",
+    "static/media/ts.png": "/static/media/ts.cf0efaf73c3cc9d45263.png",
     "static/media/mui.png": "/static/media/mui.5b2d8a0a309d9f7d47c1.png",
     "static/media/github.png": "/static/media/github.22cfdd1cba253783ce51.png",
     "static/media/figma.png": "/static/media/figma.72fbc535ebe253a5dbc4.png",
@@ -21,12 +22,12 @@
     "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
     "static/media/docker.png": "/static/media/docker.e0ba9d2386737b9f87c6.png",
     "index.html": "/index.html",
-    "main.ac98498b.css.map": "/static/css/main.ac98498b.css.map",
-    "main.030dec7f.js.map": "/static/js/main.030dec7f.js.map",
+    "main.a163fa4a.css.map": "/static/css/main.a163fa4a.css.map",
+    "main.b63b419f.js.map": "/static/js/main.b63b419f.js.map",
     "787.e4c5ef8e.chunk.js.map": "/static/js/787.e4c5ef8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac98498b.css",
-    "static/js/main.030dec7f.js"
+    "static/css/main.a163fa4a.css",
+    "static/js/main.b63b419f.js"
   ]
 }
