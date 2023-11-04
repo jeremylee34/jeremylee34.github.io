@@ -379,7 +379,7 @@ width: 0px;
   }
 
   .chip-container {
-    @apply flex justify-center sm:justify-start flex-wrap gap-[10px] mt-[15px];
+    @apply justify-center sm:justify-start flex-wrap gap-[13px] h-auto;
   }
 
 }

@@ -78,3 +78,18 @@ export function animateAboutText() {
   const heroIcon = document.querySelectorAll('.aboutPortrait')[0]
   heroIcon.classList.add('animate')
 }
+
+export function animateChips(section) {
+  const navbarLinks = document.querySelectorAll('.chip-slide');
+  var index = 0
+  navbarLinks.forEach((link) => {
+    var style = window.getComputedStyle(link)
+    link.classList.remove('animate')
+    if (style.display !== 'none') {
+      setTimeout(() => {
+        link.classList.add('animate');
+      }, 100 * (index + 1));
+      index += 1
+    }
+  });
+}
