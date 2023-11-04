@@ -31,7 +31,7 @@ const Section = () => {
   const outerBorder = `${borderClass} transition duration-300 ease-in-out`
 
   return (
-    <div className="flex gap-5 mt-5 mb-2">
+    <div className="flex gap-5 mt-5 mb-2 sm:max-w-[35vw]">
       <div className="flex flex-col">
        <div className={`${outerBorder} ${
          selectedSection === "Languages"
