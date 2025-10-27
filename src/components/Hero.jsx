@@ -43,9 +43,6 @@ const Hero = () => {
             <a href="https://github.com/jeremylee34" target="_blank">
               <img className='heroLinks hero-text-slide' src={github} alt="github logo" />
             </a>
-            <a href={resumePDF} target="_blank">
-              <img className='heroLinks hero-text-slide' src={resume} alt="resume icon" />
-            </a>
             <a href="mailto: jeremy.lee6857@gmail.com" target="_blank">
               <img className='heroLinks hero-text-slide' src={email} alt="email icon" />
             </a>
